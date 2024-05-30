@@ -1,7 +1,7 @@
 # Hyper V Configuration
 The `configuration.nix` in this directory was exported from a working NixOS installation running GNOME desktop on 20240530. 
 
-I did scour the internet, mostly ineffectually until happening on a Reddit thread, to be linked later, which pointed out the key change needed to gain desktop function in HyperV.
+I did scour the internet, mostly ineffectually until happening on [this Reddit Thread](https://www.reddit.com/r/NixOS/comments/14suxhk/nixos_on_hyperv_win11/), which pointed out the key change needed to gain desktop function in HyperV.
 
 You need specific video drivers! See Lines 50-51, and 67-69 for the specific changes made. 
 
