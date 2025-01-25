@@ -7,7 +7,12 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./hardware-configuration.nix 
+      ./gc.nix      
+      ./dev.nix
+      ./vm.nix
+     # ./record.nix
+     # ./debug.nix
     ];
 
   # Bootloader.
@@ -15,7 +20,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.initrd.luks.devices."luks-b0dfd9c4-9e48-4633-b4fc-3a9f4d901c10".device = "/dev/disk/by-uuid/b0dfd9c4-9e48-4633-b4fc-3a9f4d901c10";
-  networking.hostName = "TheMachine"; # Define your hostname.
+  networking.hostName = "Nox"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -79,18 +84,17 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.theUser = {
+  users.users.djs = {
     isNormalUser = true;
-    description = "theUser";
+    description = "djs";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
-	git
-	vscode-with-extensions
 	obsidian
 	firefox
 	ungoogled-chromium
 	teams-for-linux
+	bitwarden-desktop
     ];
   };
 
