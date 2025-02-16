@@ -8,7 +8,8 @@
     - dev - Common tools for Development (may move lang to flakes)
     - vm - virtual machine setup. May need some cleanup
     - record - tools for Podcast recording.
-    - debug - setup OS to take crashDump, and other settings as neede. 
+    - debug - setup OS to take crashDump, and other settings as needed
+- Used Symlink to Configuration.nix in `/etc/nixos/` with full-path link to the hardwar-config to allow better control by user over docs. 
 
 ## Win11 VM
 - XML structure capturing key changes made for Libvirt/QEMU VM

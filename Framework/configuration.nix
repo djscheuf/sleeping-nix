@@ -7,11 +7,12 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix 
+      /etc/nixos/hardware-configuration.nix 
       ./gc.nix      
       ./dev.nix
       ./vm.nix
-     # ./record.nix
+      ./record.nix
+      ./branding.nix
      # ./debug.nix
     ];
 
@@ -95,6 +96,8 @@
 	ungoogled-chromium
 	teams-for-linux
 	bitwarden-desktop
+	libreoffice-qt6-fresh	
+	mgba
     ];
   };
 
