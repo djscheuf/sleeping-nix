@@ -16,7 +16,7 @@
 		spice-protocol
 		win-virtio
 		win-spice
-		gnome.adwaita-icon-theme
+		gnome.adwaita-icon-theme # needed some Virt-manager app won't crash when trying to load iconsS
 		OVMFFull # appears to have issue in that part of the binary isn't included.
 		# pursuing solution from https://bbs.archlinux.org/viewtopic.php?id=301554
 		qemu_kvm
