@@ -13,7 +13,9 @@
       ./vm.nix
       ./record.nix
       ./branding.nix
+      ./personal.nix
      # ./debug.nix
+     ./certs.nix
     ];
 
   # Bootloader.
@@ -91,13 +93,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
-	obsidian
-	firefox
-	ungoogled-chromium
-	teams-for-linux
-	bitwarden-desktop
-	libreoffice-qt6-fresh	
-	mgba
     ];
   };
 
