@@ -10,6 +10,7 @@
 			fira-code-symbols
 			nodejs_20
 			lmstudio
+			microsoft-edge
 		];
 	};
 }

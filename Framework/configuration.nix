@@ -16,6 +16,7 @@
       ./personal.nix
      # ./debug.nix
      ./certs.nix
+     ./printing.nix
     ];
 
   # Bootloader.
