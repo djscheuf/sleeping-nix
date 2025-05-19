@@ -17,3 +17,22 @@
 ## Win11 VM
 - XML structure capturing key changes made for Libvirt/QEMU VM
 - Specifically needed to pull CentOS OVMF.fd files to make secureboot work
+
+## Upgrading NixOS Version
+- https://ostechnix.com/upgrade-nixos/
+Check your current version:
+```
+cat /etc/os-release
+```
+
+check your current channel:
+```
+sudo nix-channel --list | grep nixos
+```
+
+Update your Channel:
+```
+sudo nix-channel --add https://channels.nixos.org/nixos-{new-version} nixos
+```
+
+Then pass the `--upgrade` flag to the rebuild command.
