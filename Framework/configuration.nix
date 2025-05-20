@@ -10,6 +10,8 @@
       /etc/nixos/hardware-configuration.nix 
       ./gc.nix      
       ./dev.nix
+      ./docker.nix
+      ./improving.nix
       ./vm.nix
       ./record.nix
       ./branding.nix
