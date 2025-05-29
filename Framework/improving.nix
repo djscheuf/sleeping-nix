@@ -7,6 +7,9 @@
 			teams-for-linux
 			microsoft-edge
 			windsurf
+			direnv
+			devcontainer
+			zoom-us
 		];
 	};
 }
