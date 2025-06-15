@@ -35,4 +35,9 @@ Update your Channel:
 sudo nix-channel --add https://channels.nixos.org/nixos-{new-version} nixos
 ```
 
+Or update to Unstable:
+```
+sudo nix-channel --add https://channels.nixos.org/nixos-unstable nixos
+```
+
 Then pass the `--upgrade` flag to the rebuild command.
