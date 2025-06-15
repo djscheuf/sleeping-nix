@@ -8,7 +8,7 @@
 			fira-code-symbols
 			nodejs_20
 			lmstudio
-			code-cursor
+			azuredatastudio
 		];
 	};
 }
