@@ -10,7 +10,12 @@
 			direnv
 			devcontainer
 			zoom-us
+			tailscale
 		];
 	};
+
+	services.tailscale.enable = true;
+	# log in with `tailscale login`, follow the link; supports multiple accounts (we think)
+	# check status with `tailscale status`
 }
 
