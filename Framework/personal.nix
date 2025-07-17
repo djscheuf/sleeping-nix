@@ -10,7 +10,15 @@
             mgba
             calibre
             libation
+            sound-juicer
+            makemkv
+            handbrake
 		];
 	};
+
+    # Ensures Makemkv can see Optical Disc Drives
+    # https://discourse.nixos.org/t/makemkv-cant-find-my-usb-blu-ray-drive/23714/3
+    boot.kernelModules = ["sg"];
+
 }
 
