@@ -93,7 +93,7 @@
   users.users.djs = {
     isNormalUser = true;
     description = "djs";
-    extraGroups = [ "networkmanager" "wheel" "docker"];
+    extraGroups = [ "networkmanager" "wheel"];
     packages = with pkgs; [
     #  thunderbird
     ];
