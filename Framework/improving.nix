@@ -11,6 +11,7 @@
 			devcontainer
 			zoom-us
 			tailscale
+			remmina
 		];
 	};
 
