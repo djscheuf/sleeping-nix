@@ -9,6 +9,7 @@
 			nodejs_20
 			lmstudio
 			azuredatastudio
+			bitwarden-cli
 		];
 	};
 }
