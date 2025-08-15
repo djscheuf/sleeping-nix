@@ -4,8 +4,9 @@
 	users.users.djs = {
 		packages = with pkgs; [
 			obs-studio
-			openshot-qt
+			#openshot-qt
 			audacity
+			kdePackages.kdenlive
 		];
 	};
 }
