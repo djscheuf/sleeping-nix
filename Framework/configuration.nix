@@ -16,6 +16,7 @@
       ./record.nix
       ./branding.nix
       ./personal.nix
+      ./gaming.nix
      # ./debug.nix
      ./certs.nix
      ./printing.nix
