@@ -13,6 +13,7 @@
             sound-juicer
             makemkv
             handbrake
+            yt-dlp
 		];
 	};
 
