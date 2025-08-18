@@ -4,7 +4,7 @@
 	users.users.djs = {
 		packages = with pkgs; [
 			git
-			vscode-with-extensions
+			vscode-fhs
 			fira-code-symbols
 			nodejs_20
 			lmstudio
