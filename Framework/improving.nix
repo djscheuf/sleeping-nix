@@ -6,7 +6,7 @@
 			ungoogled-chromium
 			teams-for-linux
 			# microsoft-edge # removed due to lack of maint in NixPkgs
-			windsurf
+			windsurf-custom
 			direnv
 			devcontainer
 			zoom-us

@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix 
+      ./custom-packages.nix
       ./os-mgmt.nix      
       ./dev.nix
       ./docker.nix
