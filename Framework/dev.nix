@@ -6,10 +6,13 @@
 			git
 			vscode-fhs
 			fira-code-symbols
-			nodejs_20
 			lmstudio
 			azuredatastudio
 			bitwarden-cli
+			nodejs_20
+			pnpm
+			dotnetCorePackages.sdk_8_0-bin
+			insomnia
 		];
 	};
 }
