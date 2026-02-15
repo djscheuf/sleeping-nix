@@ -8,12 +8,13 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix 
-     #  ./custom-packages.nix
+      ./custom-packages.nix
      # ./os-mgmt.nix      
-     # ./dev.nix
+     ./dev.nix
      # ./docker.nix
-     #  ./improving.nix
-     # ./vm.nix
+      ./improving.nix
+      ./vm.nix
+    # ./data-partition.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
       #./record.nix
       #./branding.nix
      # ./personal.nix
@@ -28,6 +29,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.initrd.luks.devices."luks-b0dfd9c4-9e48-4633-b4fc-3a9f4d901c10".device = "/dev/disk/by-uuid/b0dfd9c4-9e48-4633-b4fc-3a9f4d901c10";
+  
   networking.hostName = "Nox"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -119,10 +121,7 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-	nano
-    chromium
-    git
-    vscode
+	  nano
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -8,14 +8,14 @@
 			# microsoft-edge # removed due to lack of maint in NixPkgs
 			windsurf-custom
 			direnv
-			devcontainer
+			# devcontainer
 			zoom-us
-			tailscale
-			remmina
+			# tailscale
+			# remmina
 		];
 	};
 
-	services.tailscale.enable = true;
+	# services.tailscale.enable = true;
 	# log in with `tailscale login`, follow the link; supports multiple accounts (we think)
 	# check status with `tailscale status`
 }
