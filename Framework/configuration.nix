@@ -8,19 +8,19 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix 
-      ./custom-packages.nix
-      ./os-mgmt.nix      
-      ./dev.nix
-      ./docker.nix
-      ./improving.nix
-      ./vm.nix
-      ./record.nix
-      ./branding.nix
-      ./personal.nix
-      ./gaming.nix
+     #  ./custom-packages.nix
+     # ./os-mgmt.nix      
+     # ./dev.nix
+     # ./docker.nix
+     #  ./improving.nix
+     # ./vm.nix
+      #./record.nix
+      #./branding.nix
+     # ./personal.nix
+     # ./gaming.nix
      # ./debug.nix
-     ./certs.nix
-     ./printing.nix
+     #./certs.nix
+     #./printing.nix
     ];
 
   # Bootloader.
@@ -37,6 +37,15 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Per Internet Search, enables SystemD Resolved should help with DNS
+  # services.resolved.enable = true;
+  
+  #Get past Logrotate issue on rebuild?
+  # services.logrotate.checkConfig = false;
+
+  # trying to resolve DNS resolution issues with current version. 
+  # hardware.enableRedistributableFirmware = true;
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -60,8 +69,8 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -73,7 +82,8 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = false;  
+  # services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -110,6 +120,9 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
 	nano
+    chromium
+    git
+    vscode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -137,6 +150,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "25.05"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 
 }
