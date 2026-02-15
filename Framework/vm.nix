@@ -14,7 +14,7 @@
 		virt-viewer
 		spice spice-gtk
 		spice-protocol
-		win-virtio
+		virtio-win
 		win-spice
 		# gnome.adwaita-icon-theme # needed some Virt-manager app won't crash when trying to load iconsS
 		adwaita-icon-theme
@@ -31,12 +31,11 @@
 			enable = true;
 			qemu = {
 				package = pkgs.qemu_kvm;
-				runAsRoot = true;
 				swtpm.enable = true;
-				ovmf.enable = true;
+				# ovmf.enable = true;
 
 				# Issue occurs as this package output is not null or package. Perhaps issue with OVMFFull itself?
-				ovmf.packages = [ pkgs.OVMFFull.fd ];
+				# ovmf.packages = [ pkgs.OVMFFull.fd ];
 			};
 		};
 		spiceUSBRedirection.enable = true;

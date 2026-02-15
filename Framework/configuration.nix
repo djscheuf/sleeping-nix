@@ -11,14 +11,14 @@
       ./custom-packages.nix
      # ./os-mgmt.nix      
      ./dev.nix
-     # ./docker.nix
+     ./docker.nix
       ./improving.nix
       ./vm.nix
     # ./data-partition.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
       #./record.nix
       #./branding.nix
-     # ./personal.nix
-     # ./gaming.nix
+     ./personal.nix
+     ./gaming.nix
      # ./debug.nix
      #./certs.nix
      #./printing.nix
