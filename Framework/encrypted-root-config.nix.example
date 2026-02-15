@@ -1,0 +1,31 @@
+{ config, pkgs, ... }:
+
+{
+  # EXAMPLE configuration for Phase 2: Encrypted root partition
+  # This shows what your configuration.nix should look like after encrypting nvme0n1p4
+  # DO NOT USE THIS YET - Only for Phase 2 reference
+  
+  # All three partitions unlocked with single passphrase during boot
+  boot.initrd.luks.devices = {
+    # Swap partition (already working)
+    "luks-swap" = {
+      device = "/dev/disk/by-uuid/b0dfd9c4-9e48-4633-b4fc-3a9f4d901c10";
+    };
+    
+    # Data partition (Phase 1)
+    "luks-data" = {
+      device = "/dev/disk/by-uuid/3d5275cd-afed-439c-99a4-4dac41b7dd69";
+    };
+    
+    # Root partition (Phase 2 - REPLACE UUID after encrypting p4)
+    "luks-root" = {
+      device = "/dev/disk/by-uuid/REPLACE-WITH-NEW-UUID-AFTER-ENCRYPTION";
+      # This UUID will be the LUKS UUID of the encrypted nvme0n1p4
+      # Get it with: sudo cryptsetup luksDump /dev/nvme0n1p4 | grep UUID
+    };
+  };
+  
+  # After Phase 2, hardware-configuration.nix will automatically reference
+  # /dev/mapper/luks-root for the root filesystem
+  # You don't need to manually configure fileSystems."/" here
+}

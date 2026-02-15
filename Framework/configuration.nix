@@ -14,7 +14,7 @@
      ./docker.nix
       ./improving.nix
       ./vm.nix
-    # ./data-partition.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
+     ./data-partition-initrd.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
       #./record.nix
       #./branding.nix
      ./personal.nix
