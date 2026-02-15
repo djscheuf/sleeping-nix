@@ -4,9 +4,12 @@
   nixpkgs.overlays = [
     (self: super: {
       # Custom Windsurf package from local repo
-      # vscode-generic is a path to the generic.nix file in nixpkgs
       windsurf-custom = super.callPackage /home/djs/Documents/nixpkg-windsurf/package.nix {
-        vscode-generic = super.path + "/pkgs/applications/editors/vscode/generic.nix";
+        vscode-generic = import (super.path + "/pkgs/applications/editors/vscode/generic.nix");
+        curl = super.curl;
+        openssl = super.openssl;
+        webkitgtk_4_1 = super.webkitgtk_4_1;
+        libsoup_3 = super.libsoup_3;
       };
     })
   ];
