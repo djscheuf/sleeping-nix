@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../nixpkg-windsurf"
+		}
+	],
+	"settings": {}
+}
