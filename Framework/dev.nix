@@ -13,6 +13,8 @@
 			pnpm
 			dotnetCorePackages.sdk_8_0-bin
 			insomnia
+			jq
+			python315
 		];
 	};
 }
