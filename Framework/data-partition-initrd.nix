@@ -5,6 +5,12 @@
   # This unlocks and mounts the old root filesystem during boot (in initrd stage)
   # The partition is unlocked with the same passphrase as swap
   
+  # Create group for data partition access
+  users.groups.dataaccess = {
+    gid = 1001;  # Choose an unused GID
+    members = [ "djs" ];
+  };
+  
   # Add data partition to LUKS devices unlocked during boot
   boot.initrd.luks.devices."luks-data" = {
     device = "/dev/disk/by-uuid/3d5275cd-afed-439c-99a4-4dac41b7dd69";
@@ -20,8 +26,8 @@
     # The old /boot directory in this partition will NOT be used by the system
   };
   
-  # Create the mount point
+  # Create mount point with group-based access
   systemd.tmpfiles.rules = [
-    "d /mnt/data 0755 root root -"
+    "d /mnt/data 0775 root dataaccess -"
   ];
 }
