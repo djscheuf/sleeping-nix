@@ -8,19 +8,19 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix 
-      ./custom-packages.nix
-     # ./os-mgmt.nix      
+     ./custom-packages.nix
+     ./os-mgmt.nix      
      ./dev.nix
      ./docker.nix
-      ./improving.nix
-      ./vm.nix
+     ./improving.nix
+     ./vm.nix
      ./data-partition-initrd.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
       #./record.nix
-      #./branding.nix
+      ./branding.nix
      ./personal.nix
      ./gaming.nix
      # ./debug.nix
-     #./certs.nix
+     ./certs.nix
      #./printing.nix
     ];
 
@@ -39,6 +39,18 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  
+  # Prevent ERR_NETWORK_CHANGED in Chromium by ignoring Docker/VM bridges
+  # Docker bridge networks cause NetworkManager to broadcast network changes
+  # which Chromium interprets as the network changing
+  networking.networkmanager.unmanaged = [
+    "interface-name:docker*"
+    "interface-name:br-*"
+    "interface-name:veth*"
+    "interface-name:virbr*"
+    "interface-name:vmnet*"
+  ];
+
 
   # Per Internet Search, enables SystemD Resolved should help with DNS
   # services.resolved.enable = true;
