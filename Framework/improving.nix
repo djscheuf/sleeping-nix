@@ -5,6 +5,7 @@
 		packages = with pkgs; [
 			ungoogled-chromium
 			teams-for-linux
+			teams-for-linux-alt
 			# microsoft-edge # removed due to lack of maint in NixPkgs
 			windsurf-custom
 			devin-cli-custom
