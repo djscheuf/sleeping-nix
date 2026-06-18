@@ -16,6 +16,11 @@
       devin-cli-custom = super.callPackage /home/djs/Documents/devin-cli-nixpkg/devin-cli/default.nix {
         pkgs = super;
       };
+      
+      # Custom Teams Alt package for secondary account
+      teams-for-linux-alt = super.callPackage /home/djs/Documents/teams-alt-nixpkg/package.nix {
+        teams-for-linux = super.teams-for-linux;
+      };
     })
   ];
 }
