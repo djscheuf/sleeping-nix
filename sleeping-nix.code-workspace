@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../nixpkg-windsurf"
+		},
+		{
+			"path": "../devin-cli-nixpkg"
+		},
+		{
+			"path": "../teams-alt-nixpkg"
 		}
 	],
 	"settings": {}
