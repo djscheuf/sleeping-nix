@@ -7,12 +7,10 @@
 			vscode-fhs
 			fira-code-symbols
 			lmstudio
-			azuredatastudio
 			bitwarden-cli
-			nodejs_20
+			nodejs_24
 			pnpm
 			dotnetCorePackages.sdk_8_0-bin
-			insomnia
 			jq
 			python315
 		];
