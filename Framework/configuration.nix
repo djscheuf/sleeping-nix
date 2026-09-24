@@ -15,8 +15,8 @@
      ./improving.nix
      ./vm.nix
      ./data-partition-initrd.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
-      #./record.nix
-      ./branding.nix
+     ./record.nix
+     ./branding.nix
      ./personal.nix
      ./gaming.nix
      # ./debug.nix
