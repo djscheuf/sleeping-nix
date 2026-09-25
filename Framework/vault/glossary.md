@@ -24,6 +24,10 @@ Project-specific vocabulary for the sleeping-nix repo / Nox system.
 - **Data partition** — `nvme0n1p2` (684GB LUKS2), the old root filesystem, auto-decrypted in initrd and mounted at `/mnt/data` by `data-partition-initrd.nix`. Its stale `/boot` directory is never used.
 - **`dataaccess`** — group (gid 1001) that owns `/mnt/data`; `djs` is a member. Created by `data-partition-initrd.nix`.
 
+## Agent Skills
+
+- **obs skill** — Devin skill at `.devin/skills/obs/` documenting OBS Studio: scene/source/filter/encoder property tables, audio tuning, streaming protocols, troubleshooting, and obs-websocket/Lua/Python automation. Built from `obsproject.com/kb` — note that `docs.obsproject.com` is the developer API, not user docs. Details in `services/obs-skill.md`.
+
 ## Virtualization
 
 - **Win11 VM** — Windows 11 libvirt/QEMU VM defined by `Framework/Win11 VM.xml`. SecureBoot required CentOS `OVMF.fd` files because nixpkgs `OVMFFull` doesn't ship the complete firmware (see `vm.nix` comments).

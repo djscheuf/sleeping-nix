@@ -1,6 +1,6 @@
 # Vault Index
 
-Last updated: 2026-09-24
+Last updated: 2026-09-25
 
 ## Decisions
 
@@ -8,7 +8,7 @@ _None yet — ADRs go in `decisions/` as `ADR-NNN-<slug>.md`._
 
 ## Services
 
-_None yet — service/component notes, runbooks, and gotchas go in `services/`._
+- [OBS Studio skill](./services/obs-skill.md) — `.devin/skills/obs/` covers scenes/sources/filters/audio/encoders/protocols/troubleshooting/automation; read before OBS work (2026-09-25)
 
 ## Incidents
 
