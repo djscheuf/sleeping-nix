@@ -7,6 +7,7 @@
 			#openshot-qt
 			audacity
 			kdePackages.kdenlive
+			easyeffects
 		];
 	};
 }
