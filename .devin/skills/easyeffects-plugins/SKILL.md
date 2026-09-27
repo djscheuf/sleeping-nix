@@ -1,4 +1,5 @@
 ---
+name: easyeffects-plugins
 description: Use this skill for any task involving Easy Effects (PipeWire audio effects app for Linux): choosing or understanding its audio effect plugins, configuring plugin parameters (GUI options or D-Bus/local-server properties), scripting plugin control, or troubleshooting an effects chain. Triggers include easyeffects, Easy Effects, PipeWire audio effects, compressor/gate/limiter/equalizer/reverb plugins, EBU R128 autogain, rnnoise/deepfilternet noise reduction, convolver impulse responses, and the EasyEffectsServer socket commands (set_property/get_property).
 ---
 
