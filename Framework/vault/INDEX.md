@@ -9,6 +9,7 @@ _None yet — ADRs go in `decisions/` as `ADR-NNN-<slug>.md`._
 ## Services
 
 - [OBS Studio skill](./services/obs-skill.md) — `.devin/skills/obs/` covers scenes/sources/filters/audio/encoders/protocols/troubleshooting/automation; read before OBS work (2026-09-25)
+- [EasyEffects HyperX Cloud II presets](./services/easyeffects-hyperx-presets.md) — Music/Video Essays/Meetings output presets, tuned around the headset's known FR quirks; full rationale in `Framework/docs/audio/` (2026-09-27)
 
 ## Incidents
 
