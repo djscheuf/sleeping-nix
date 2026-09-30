@@ -13,6 +13,7 @@
 			dotnetCorePackages.sdk_8_0-bin
 			jq
 			python315
+			claude-code
 		];
 	};
 }
