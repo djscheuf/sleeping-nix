@@ -24,5 +24,5 @@
 	'';
 
 	system.autoUpgrade.enable = true;
-	system.autoUpgrade.channel = "https://channels.nixos.org/nixos-25.11";
+	system.autoUpgrade.channel = "https://channels.nixos.org/nixos-26.05";
 }
