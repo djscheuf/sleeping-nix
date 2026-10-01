@@ -14,6 +14,7 @@ _None yet — ADRs go in `decisions/` as `ADR-NNN-<slug>.md`._
 ## Incidents
 
 - [Handy Push-to-Talk shortcut conflict](./incidents/handy-push-to-talk.md) — Sep 24, 2026 (closed unresolved; Handy removed)
+- [Devin Local agent segfaults on activation](./incidents/2026-10-01-devin-local-segfault.md) — Oct 1, 2026 (root cause: patchelf corrupts bundled static-pie `devin` binary in windsurf-custom; fix pending)
 
 ## Glossary
 
