@@ -22,6 +22,7 @@
      # ./debug.nix
      ./certs.nix
      #./printing.nix
+     ./stt.nix
     ];
 
   # Bootloader.

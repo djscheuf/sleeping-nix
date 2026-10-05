@@ -1,6 +1,6 @@
 # Vault Index
 
-Last updated: 2026-09-25
+Last updated: 2026-10-04
 
 ## Decisions
 
@@ -10,6 +10,7 @@ _None yet — ADRs go in `decisions/` as `ADR-NNN-<slug>.md`._
 
 - [OBS Studio skill](./services/obs-skill.md) — `.devin/skills/obs/` covers scenes/sources/filters/audio/encoders/protocols/troubleshooting/automation; read before OBS work (2026-09-25)
 - [EasyEffects HyperX Cloud II presets](./services/easyeffects-hyperx-presets.md) — Music/Video Essays/Meetings output presets, tuned around the headset's known FR quirks; full rationale in `Framework/docs/audio/` (2026-09-27)
+- [hns — local speech-to-text CLI](./services/hns.md) — mic → Whisper → stdout+clipboard, configured in `Framework/stt.nix`; Handy's successor (2026-10-04)
 
 ## Incidents
 

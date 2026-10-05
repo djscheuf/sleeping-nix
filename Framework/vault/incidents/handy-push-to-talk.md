@@ -179,6 +179,12 @@ or something specific to this AMD/Mutter/GNOME combination).
    session, both `Tauri` and `HandyKeys` backends silently receive zero
    events despite clean initialization and correct `/dev/input` permissions.
 
+## Follow-up
+
+- 2026-10-04 — Speech-to-text need is now covered by `hns`, a CLI tool with no
+  global-hotkey dependency (installed in `Framework/stt.nix`). See
+  [[../services/hns.md]].
+
 ## References
 
 - Handy docs: <https://handy.computer/docs>
