@@ -10,7 +10,7 @@
 			bitwarden-cli
 			nodejs_24
 			pnpm
-			dotnetCorePackages.sdk_8_0-bin
+			dotnet-sdk_10
 			jq
 			python315
 			claude-code
