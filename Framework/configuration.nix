@@ -13,6 +13,7 @@
      ./dev.nix
      ./docker.nix
      ./improving.nix
+     ./client.nix
      ./vm.nix
      ./data-partition-initrd.nix  # Uncomment to enable auto-mount of encrypted data partition at /mnt/data
      ./record.nix
